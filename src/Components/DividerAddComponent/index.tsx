@@ -2,7 +2,7 @@ import * as React from "react";
 import { Button, Divider } from "@fluentui/react-components";
 
 import { addDividerProps } from "./Props";
-import { useStyles } from "./DividerAddStyle";
+import { useStyles } from "./ZDividerAddStyle";
 
 export const ZDividerAdd: React.FC<addDividerProps> = ({
   onAddClick,
