@@ -5,8 +5,7 @@
 /.pnp
 .pnp.js
 
-# auth_ignore-file
-.npmrc
+
 
 # testing
 /coverage
