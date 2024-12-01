@@ -3,7 +3,7 @@ import ZDividerAdd from '.'
 
 const ZDividerAddFile = () => {
   return (
-    <div style={{display:'flex', marginTop:'20px'}}>
+    <div style={{display:'flex', flexDirection:'column' ,marginTop:'20px'}}>
       <h1>Divider Component</h1>
       <ZDividerAdd text='+Add Button'/>
     </div>
