@@ -1,4 +1,4 @@
-import { Button, mergeClasses, shorthands } from "@fluentui/react-components";
+import { Button, mergeClasses} from "@fluentui/react-components";
 import { useStyles } from "./ZButtonsStyle";
 import { forwardRef, useState } from "react";
 import { colorSchema } from "../../assets/desginPattern/colors/colorsSchema";
