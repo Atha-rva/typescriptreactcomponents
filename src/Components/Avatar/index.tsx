@@ -21,8 +21,8 @@ export const ZAvatar: React.FC<AvatarProps> = (props) => {
     disabled = false,
     isName = true,
   } = props;
-  const [isShowAvatar, setIsShowAvatar] = React.useState<boolean>(isAvatar);
-  const [avatarUsers, setAvatarUsers] = React.useState(users || []);
+  const [isShowAvatar] = React.useState<boolean>(isAvatar);
+  const [avatarUsers] = React.useState(users || []);
   const mergedClass = mergeClasses(
     rightAvatar ? styles.avatarGroup : styles.avatarGroupClass,
     props.avatarGroupStyle

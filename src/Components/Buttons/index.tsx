@@ -249,22 +249,22 @@ const ZBorderColorButton = forwardRef<HTMLButtonElement, zButtonProps>(
       disabled = false,
       ...rest
     } = props;
-    const [buttonStyle, setButtonStyle] = useState({});
+    // const [buttonStyle, setButtonStyle] = useState({});
 
-    const setStyle = () => {
-      setButtonStyle({
-        color: colorSchema.buttonHoldBackgroundColor,
-        backgroundColor: "none",
-        ...shorthands.border(
-          "1px",
-          "solid",
-          colorSchema.buttonHoldBackgroundColor
-        ),
-      });
-      if (onClick) {
-        onClick();
-      }
-    };
+    // const setStyle = () => {
+    //   setButtonStyle({
+    //     color: colorSchema.buttonHoldBackgroundColor,
+    //     backgroundColor: "none",
+    //     ...shorthands.border(
+    //       "1px",
+    //       "solid",
+    //       colorSchema.buttonHoldBackgroundColor
+    //     ),
+    //   });
+    //   if (onClick) {
+    //     onClick();
+    //   }
+    // };
 
     return (
       <Button
@@ -277,7 +277,7 @@ const ZBorderColorButton = forwardRef<HTMLButtonElement, zButtonProps>(
           disabled && styles.disabled
         )}
         {...rest}
-        onClick={setStyle}
+        // onClick={setStyle}
       />
     );
   }

@@ -23,7 +23,7 @@ export const ZCalender: React.FC<fieldProps> = (props) => {
     inputStyle,
     isVisible = true,
     disabled = false,
-    ...rest
+    // ...rest
   } = props;
   const styles = useStyles();
 
