@@ -11,6 +11,7 @@ import CardLayoutFile from './Components/Card/CardLayoutFile';
 import CheckboxFile from './Components/Chekbox/CheckboxFile';
 import ContainerFile from './Components/Container/ContFile';
 import DatePickerFile from './Components/DatePicker/DatePickerFile';
+import DrawerFile from './Components/Drawer/DrawerFile';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
       <CheckboxFile/>
       <ContainerFile/>
       <DatePickerFile/>
-      
+      <DrawerFile/>
     </div>
   );
 }
