@@ -7,7 +7,6 @@ import AccordionFile from './Components/ZAccordianListDetails/AccordionFile';
 import ButtonFile from './Components/Buttons/ButtonFile';
 import ButtonRadioFile from './Components/ButtonwithRadio/ButtonRadioFile';
 import CalenderFile from './Components/Calendar/CalenderFile';
-import CalenderOverladFile from './Components/CalendarOverlad/CalenderOverladFile';
 import CardLayoutFile from './Components/Card/CardLayoutFile';
 import CheckboxFile from './Components/Chekbox/CheckboxFile';
 import ContainerFile from './Components/Container/ContFile';
@@ -24,11 +23,11 @@ function App() {
       <ButtonFile/>
       <ButtonRadioFile/>
       <CalenderFile/>
-      <CalenderOverladFile/>
       <CardLayoutFile/>
       <CheckboxFile/>
       <ContainerFile/>
       <DatePickerFile/>
+      
     </div>
   );
 }
