@@ -12,6 +12,8 @@ import CheckboxFile from './Components/Chekbox/CheckboxFile';
 import ContainerFile from './Components/Container/ContFile';
 import DatePickerFile from './Components/DatePicker/DatePickerFile';
 import DrawerFile from './Components/Drawer/DrawerFile';
+import DropDownFile from './Components/DropDown/DropdownFile';
+import FileUploderFile from './Components/FileUploader/FileUploderFile';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
       <ContainerFile/>
       <DatePickerFile/>
       <DrawerFile/>
+      <DropDownFile/>
+      <FileUploderFile/>
     </div>
   );
 }
