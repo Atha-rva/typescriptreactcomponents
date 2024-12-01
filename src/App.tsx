@@ -4,7 +4,7 @@ import HeadingFile from './Components/Heading/HeadingFile';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <ZDividerAddFile/>
       <HeadingFile/>
     </div>
