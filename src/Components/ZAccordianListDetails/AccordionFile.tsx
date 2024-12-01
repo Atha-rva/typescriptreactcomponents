@@ -27,7 +27,7 @@ const AccordionFile: React.FC = () => {
         disabled={false} 
         isVisible={true} 
         // showCount="5"
-        removeDeleteBtn={true} 
+        removeDeleteBtn={false} 
         hideIndex={false} 
       >
         <p>
