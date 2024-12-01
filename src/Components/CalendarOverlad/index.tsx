@@ -106,9 +106,9 @@ export const CalendarOverlaidMonth: React.FC<dateProps> = (props) => {
     [getDate]
   );
 
-  const isDateWithinRange = (date: Date): boolean => {
-    return date >= minDate && date <= maxDate;
-  };
+  // const isDateWithinRange = (date: Date): boolean => {
+  //   return date >= minDate && date <= maxDate;
+  // };
 
   const toggleCalendarVisibility = () => {
     setIsCalendarVisible(!isCalendarVisible);
@@ -205,7 +205,7 @@ export const CalendarOverlaidMonth: React.FC<dateProps> = (props) => {
 
     if (value.length === 10) {
       const parsedDate = parseDate(value);
-      if (parsedDate && isDateWithinRange(parsedDate)) {
+      if (parsedDate ) {
         handleChangeData(parsedDate);
         setSelectedDate(parsedDate);
         if (getDate) {
@@ -226,7 +226,7 @@ export const CalendarOverlaidMonth: React.FC<dateProps> = (props) => {
         const [day, month, year] = inputValue.split("/").map(Number);
         if (day >= 1 && day <= 31 && month >= 1 && month <= 12) {
           const parsedDate = parseDate(inputValue);
-          if (parsedDate && isDateWithinRange(parsedDate)) {
+          if (parsedDate ) {
             setSelectedDate(parsedDate);
             if (getDate) {
               getDate(formatDate(parsedDate));
@@ -279,22 +279,22 @@ export const CalendarOverlaidMonth: React.FC<dateProps> = (props) => {
     }
   };
 
-  React.useEffect(() => {
-    if (selectedValue) {
-      const parsedDate = parseDate(selectedValue);
-      if (parsedDate && isDateWithinRange(parsedDate)) {
-        setSelectedDate(parsedDate);
-        setInputValue(formatDate(parsedDate));
-        setValidStateCalendar("valid");
-      } else {
-        setValidStateCalendar("invalid");
-      }
-    } else {
-      setSelectedDate(undefined);
-      setInputValue("");
-      setValidStateCalendar("none");
-    }
-  }, [selectedValue]);
+  // React.useEffect(() => {
+  //   if (selectedValue) {
+  //     const parsedDate = parseDate(selectedValue);
+  //     if (parsedDate && isDateWithinRange(parsedDate)) {
+  //       setSelectedDate(parsedDate);
+  //       setInputValue(formatDate(parsedDate));
+  //       setValidStateCalendar("valid");
+  //     } else {
+  //       setValidStateCalendar("invalid");
+  //     }
+  //   } else {
+  //     setSelectedDate(undefined);
+  //     setInputValue("");
+  //     setValidStateCalendar("none");
+  //   }
+  // }, [selectedValue]);
 
   const getPositionStyle = () => {
     switch (position) {
