@@ -21,14 +21,14 @@ const AccordionFile: React.FC = () => {
     <div>
       <h1>Accordion Component</h1>
       <ZAccordionListDetails
-        list={accordionData} // Provide the data to the accordion
-        //   Headertitle="Accordion Header" // Title for each accordion header
-        onDelete={handleDelete} // Function to handle delete button click
-        disabled={false} // Optional: disable accordion items
-        isVisible={true} // Optional: control visibility of the accordion
-        showCount="5" // Optional: custom count or badge
-        removeDeleteBtn={false} // Optional: whether to hide the delete button
-        hideIndex={false} // Optional: whether to hide the index
+        list={accordionData}
+        //   Headertitle="Accordion Header" 
+        onDelete={handleDelete} 
+        disabled={false} 
+        isVisible={true} 
+        // showCount="5"
+        removeDeleteBtn={true} 
+        hideIndex={false} 
       >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
