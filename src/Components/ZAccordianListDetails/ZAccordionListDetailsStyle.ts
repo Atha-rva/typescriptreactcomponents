@@ -1,7 +1,6 @@
 import {
   makeStaticStyles,
   makeStyles,
-  shorthands,
 } from "@fluentui/react-components";
 import { colorSchema } from "../../assets/desginPattern/colors/colorsSchema";
 import {
