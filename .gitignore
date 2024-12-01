@@ -6,6 +6,9 @@
 .pnp.js
 
 
+#ignore_file
+.npmrc
+
 
 # testing
 /coverage
