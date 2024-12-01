@@ -22,7 +22,7 @@ const AccordionFile: React.FC = () => {
       <h1>Accordion Component</h1>
       <ZAccordionListDetails
               list={accordionData} // Provide the data to the accordion
-              Headertitle="Accordion Header" // Title for each accordion header
+            //   Headertitle="Accordion Header" // Title for each accordion header
               onDelete={handleDelete} // Function to handle delete button click
               disabled={false} // Optional: disable accordion items
               isVisible={true} // Optional: control visibility of the accordion
