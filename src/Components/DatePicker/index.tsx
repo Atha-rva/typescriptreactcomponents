@@ -20,10 +20,10 @@ export const ZDatePicker = React.forwardRef<HTMLInputElement, datePickerProp>(
 
     const {
       label,
-      placeholder,
-      fieldStyle,
-      positioning,
-      inputStyle,
+      // placeholder,
+      // fieldStyle,
+      // positioning,
+      // inputStyle,
       isVisible = true,
       disabled = false,
     } = props;

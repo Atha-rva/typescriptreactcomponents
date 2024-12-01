@@ -1,4 +1,4 @@
-import { makeStyles, shorthands } from "@fluentui/react-components";
+import { makeStyles } from "@fluentui/react-components";
 import { constants } from "../../assets/desginPattern/constant/constant";
 
 export const useStyles = makeStyles({
